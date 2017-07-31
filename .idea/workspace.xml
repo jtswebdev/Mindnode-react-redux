@@ -31,11 +31,97 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="viewController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../mindnode-development/mindnode/src/js/viewController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3514">
+              <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding>
+                <element signature="n#!!block;n#startViewController#0" expanded="false" />
+                <element signature="n#!!block;n#navigateDown#0" expanded="false" />
+                <element signature="n#!!block;n#navigateUp#0" expanded="false" />
+                <element signature="n#!!block;n#navigateJump#0" expanded="false" />
+                <element signature="n#!!block;n#checkPanelState#0" expanded="false" />
+                <element signature="e#2986#3079#0" expanded="false" />
+                <element signature="n#!!block;n#closeActivePanels#0" expanded="false" />
+                <element signature="n#!!block;n#closeNodeDetails#0" expanded="false" />
+                <element signature="n#!!block;n#closeNodeCreation#0" expanded="false" />
+                <element signature="n#!!block;n#showIconSelection#0" expanded="false" />
+                <element signature="e#4587#4824#0" expanded="false" />
+                <element signature="n#!!block;n#hideIconSelection#0" expanded="false" />
+                <element signature="e#5247#5472#0" expanded="false" />
+                <element signature="n#!!block;n#iconToChange#0" expanded="false" />
+                <element signature="n#!!block;n#changeDetailsIcon#0" expanded="false" />
+                <element signature="n#!!block;n#setDetailsIconPath#0" expanded="false" />
+                <element signature="n#!!block;n#changeCreationIcon#0" expanded="false" />
+                <element signature="n#!!block;n#setCreationIconPath#0" expanded="false" />
+                <element signature="n#!!block;n#getSelections#0" expanded="false" />
+                <element signature="n#!!block;n#setEditState#0" expanded="false" />
+                <element signature="n#!!block;n#editOn#0" expanded="false" />
+                <element signature="n#!!block;n#editOff#0" expanded="false" />
+                <element signature="n#!!block;n#checkTextValues#0" expanded="false" />
+                <element signature="e#10284#10360#0" expanded="false" />
+                <element signature="n#!!block;n#getTextDivValue#0" expanded="false" />
+                <element signature="n#!!block;n#getTextAreaValue#0" expanded="false" />
+                <element signature="n#!!block;n#updatePanelTextValues#0" expanded="false" />
+                <element signature="n#!!block;n#checkNameValues#0" expanded="false" />
+                <element signature="e#11866#11943#0" expanded="false" />
+                <element signature="n#!!block;n#getNodeTitleValue#0" expanded="false" />
+                <element signature="n#!!block;n#getNameInputValue#0" expanded="false" />
+                <element signature="n#!!block;n#updateNodeTitleValue#0" expanded="false" />
+                <element signature="n#!!block;n#spaceClicked#0" expanded="false" />
+                <element signature="e#13405#13543#0" expanded="false" />
+                <element signature="n#!!block;n#nodeClicked#0" expanded="false" />
+                <element signature="n#!!block;n#buttonClicked#0" expanded="false" />
+                <element signature="n#!!block;n#nodeEventRouter#0" expanded="false" />
+                <element signature="e#14298#15467#0" expanded="false" />
+                <element signature="n#!!block;n#buttonEventRouter#0" expanded="false" />
+                <element signature="e#15607#17646#0" expanded="false" />
+                <element signature="n#!!block;n#checkFocusParent#0" expanded="false" />
+                <element signature="e#17873#17956#0" expanded="false" />
+                <element signature="e#17991#18126#0" expanded="false" />
+                <element signature="e#18132#18438#0" expanded="false" />
+                <element signature="n#!!block;n#getCurrentFocus#0" expanded="false" />
+                <element signature="e#18656#18731#0" expanded="false" />
+                <element signature="e#18737#18816#0" expanded="false" />
+                <element signature="n#!!block;n#getCurrentFade#0" expanded="false" />
+                <element signature="e#19029#19103#0" expanded="false" />
+                <element signature="e#19109#19355#0" expanded="false" />
+                <element signature="n#!!block;n#handleRoot#0" expanded="false" />
+                <element signature="e#19588#19674#0" expanded="false" />
+                <element signature="n#!!block;n#getPanelInputValues#0" expanded="false" />
+                <element signature="n#!!block;n#getDetailsValues#0" expanded="false" />
+                <element signature="n#!!block;n#updateNodeValues#0" expanded="false" />
+                <element signature="n#!!block;n#getCreationValues#0" expanded="false" />
+                <element signature="n#!!block;n#addNodeToTree#0" expanded="false" />
+                <element signature="n#!!block;n#deleteNode#0" expanded="false" />
+                <element signature="n#!!block;n#startSave#0" expanded="false" />
+                <element signature="e#23404#23444#0" expanded="false" />
+                <element signature="e#23726#23820#0" expanded="false" />
+                <element signature="e#23898#23936#0" expanded="false" />
+                <element signature="e#24030#24070#0" expanded="false" />
+                <element signature="e#24539#24740#0" expanded="false" />
+                <element signature="e#24648#24679#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -103,7 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/NodeTypes.js" />
         <option value="$PROJECT_DIR$/src/containers/widgetContainers/NewNodeContainer.js" />
         <option value="$PROJECT_DIR$/src/components/Node.js" />
         <option value="$PROJECT_DIR$/src/containers/TreeContainer.js" />
@@ -154,6 +239,7 @@
         <option value="$PROJECT_DIR$/src/components/widgets/newComponent.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -169,8 +255,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="157" />
-    <option name="y" value="55" />
+    <option name="x" value="72" />
+    <option name="y" value="273" />
     <option name="width" value="1184" />
     <option name="height" value="731" />
   </component>
@@ -298,15 +384,15 @@
       <option name="presentableId" value="Default" />
       <updated>1501102052038</updated>
       <workItem from="1501102055511" duration="79918000" />
-      <workItem from="1501261461923" duration="119279000" />
+      <workItem from="1501261461923" duration="119843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199197000" />
+    <option name="totallyTimeSpent" value="199761000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="157" y="55" width="1184" height="731" extended-state="0" />
+    <frame x="72" y="273" width="1184" height="731" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16766982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -355,7 +441,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -363,26 +449,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/newIcon.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mindnode-development/mindnode/src/js/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="61" />
-          <folding>
-            <element signature="n#!!block;n#flattenTree#0;n#!!block;n#saveTree#0" expanded="false" />
-            <element signature="n#!!block;n#stringify#0;n#!!block;n#saveTree#0" expanded="false" />
-            <element signature="n#!!block;n#saveToLocalStorage#0;n#!!block;n#saveTree#0" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../mindnode-development/mindnode/src/js/main.js">
@@ -398,14 +464,6 @@
             <element signature="n#!!block;n#testTree#0" expanded="false" />
             <element signature="e#2716#4345#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../mindnode-development/mindnode/src/js/viewController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,10 +1110,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../mindnode-development/mindnode/src/js/storage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="38" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!block;n#saveTree#0" expanded="false" />
+            <element signature="n#!!block;n#flattenTree#0;n#!!block;n#saveTree#0" expanded="false" />
+            <element signature="n#!!block;n#stringify#0;n#!!block;n#saveTree#0" expanded="false" />
+            <element signature="n#!!block;n#saveToLocalStorage#0;n#!!block;n#saveTree#0" expanded="false" />
+            <element signature="n#!!block;n#getSavedTree#0" expanded="false" />
+            <element signature="n#!!block;n#FlatNode#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../mindnode-development/mindnode/src/js/viewController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3514">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="n#!!block;n#startViewController#0" expanded="false" />
+            <element signature="n#!!block;n#navigateDown#0" expanded="false" />
+            <element signature="n#!!block;n#navigateUp#0" expanded="false" />
+            <element signature="n#!!block;n#navigateJump#0" expanded="false" />
+            <element signature="n#!!block;n#checkPanelState#0" expanded="false" />
+            <element signature="e#2986#3079#0" expanded="false" />
+            <element signature="n#!!block;n#closeActivePanels#0" expanded="false" />
+            <element signature="n#!!block;n#closeNodeDetails#0" expanded="false" />
+            <element signature="n#!!block;n#closeNodeCreation#0" expanded="false" />
+            <element signature="n#!!block;n#showIconSelection#0" expanded="false" />
+            <element signature="e#4587#4824#0" expanded="false" />
+            <element signature="n#!!block;n#hideIconSelection#0" expanded="false" />
+            <element signature="e#5247#5472#0" expanded="false" />
+            <element signature="n#!!block;n#iconToChange#0" expanded="false" />
+            <element signature="n#!!block;n#changeDetailsIcon#0" expanded="false" />
+            <element signature="n#!!block;n#setDetailsIconPath#0" expanded="false" />
+            <element signature="n#!!block;n#changeCreationIcon#0" expanded="false" />
+            <element signature="n#!!block;n#setCreationIconPath#0" expanded="false" />
+            <element signature="n#!!block;n#getSelections#0" expanded="false" />
+            <element signature="n#!!block;n#setEditState#0" expanded="false" />
+            <element signature="n#!!block;n#editOn#0" expanded="false" />
+            <element signature="n#!!block;n#editOff#0" expanded="false" />
+            <element signature="n#!!block;n#checkTextValues#0" expanded="false" />
+            <element signature="e#10284#10360#0" expanded="false" />
+            <element signature="n#!!block;n#getTextDivValue#0" expanded="false" />
+            <element signature="n#!!block;n#getTextAreaValue#0" expanded="false" />
+            <element signature="n#!!block;n#updatePanelTextValues#0" expanded="false" />
+            <element signature="n#!!block;n#checkNameValues#0" expanded="false" />
+            <element signature="e#11866#11943#0" expanded="false" />
+            <element signature="n#!!block;n#getNodeTitleValue#0" expanded="false" />
+            <element signature="n#!!block;n#getNameInputValue#0" expanded="false" />
+            <element signature="n#!!block;n#updateNodeTitleValue#0" expanded="false" />
+            <element signature="n#!!block;n#spaceClicked#0" expanded="false" />
+            <element signature="e#13405#13543#0" expanded="false" />
+            <element signature="n#!!block;n#nodeClicked#0" expanded="false" />
+            <element signature="n#!!block;n#buttonClicked#0" expanded="false" />
+            <element signature="n#!!block;n#nodeEventRouter#0" expanded="false" />
+            <element signature="e#14298#15467#0" expanded="false" />
+            <element signature="n#!!block;n#buttonEventRouter#0" expanded="false" />
+            <element signature="e#15607#17646#0" expanded="false" />
+            <element signature="n#!!block;n#checkFocusParent#0" expanded="false" />
+            <element signature="e#17873#17956#0" expanded="false" />
+            <element signature="e#17991#18126#0" expanded="false" />
+            <element signature="e#18132#18438#0" expanded="false" />
+            <element signature="n#!!block;n#getCurrentFocus#0" expanded="false" />
+            <element signature="e#18656#18731#0" expanded="false" />
+            <element signature="e#18737#18816#0" expanded="false" />
+            <element signature="n#!!block;n#getCurrentFade#0" expanded="false" />
+            <element signature="e#19029#19103#0" expanded="false" />
+            <element signature="e#19109#19355#0" expanded="false" />
+            <element signature="n#!!block;n#handleRoot#0" expanded="false" />
+            <element signature="e#19588#19674#0" expanded="false" />
+            <element signature="n#!!block;n#getPanelInputValues#0" expanded="false" />
+            <element signature="n#!!block;n#getDetailsValues#0" expanded="false" />
+            <element signature="n#!!block;n#updateNodeValues#0" expanded="false" />
+            <element signature="n#!!block;n#getCreationValues#0" expanded="false" />
+            <element signature="n#!!block;n#addNodeToTree#0" expanded="false" />
+            <element signature="n#!!block;n#deleteNode#0" expanded="false" />
+            <element signature="n#!!block;n#startSave#0" expanded="false" />
+            <element signature="e#23404#23444#0" expanded="false" />
+            <element signature="e#23726#23820#0" expanded="false" />
+            <element signature="e#23898#23936#0" expanded="false" />
+            <element signature="e#24030#24070#0" expanded="false" />
+            <element signature="e#24539#24740#0" expanded="false" />
+            <element signature="e#24648#24679#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding />
         </state>
       </provider>
