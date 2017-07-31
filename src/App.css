@@ -1,0 +1,1243 @@
+
+.App {
+  text-align: center;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+textarea {
+
+    display: block;
+    box-sizing: border-box;
+
+}
+
+textarea:focus {
+
+  outline: none !important;
+  border:1px solid #a0faff;
+  box-shadow: 0 0 10px #719ECE;
+
+}
+textarea:focus::-webkit-input-placeholder {
+
+    color: transparent;
+
+}
+
+input:focus {
+
+  border: 2px solid #719ECE;
+
+}
+input:focus::-webkit-input-placeholder {
+
+    color: transparent;
+
+}
+
+button {
+
+  outline: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+
+}
+
+input {
+
+    box-sizing: border-box;
+    border-radius: 0;
+    display: block;
+
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes node-pulse {
+
+  from { background-color: white; } /* transform: scale( 1.0 ); */
+  to{ background-color: #BDBDBD; } /* transform: scale( 1.1 ); */
+
+}
+
+@keyframes jumpTo-pulse {
+
+  from { background-color: #ffa500;
+         -webkit-box-shadow: 0 0 10px #ff2d00;
+         -moz-box-shadow: 0 0 10px #ff2d00;
+         box-shadow: 0 0 10px #ff2d00; } /* transform: scale( 1.0 ); */
+  to { background-color: #ffa500;
+       -webkit-box-shadow: 0 0 40px #ff2d00;
+       -moz-box-shadow: 0 0 40px #ff2d00;
+       box-shadow: 0 0 40px #ff2d00; } /* transform: scale( 1.1 ); */
+
+}
+
+@keyframes newWidget-pulse {
+
+
+    from {
+        -webkit-box-shadow: 0 0 20px #ff8200;
+        -moz-box-shadow: 0 0 20px #ff8200;
+        box-shadow: 0 0 20px #ff8200; } /* transform: scale( 1.0 ); */
+    to {
+        -webkit-box-shadow: 0 0 60px #ff8200;
+        -moz-box-shadow: 0 0 60px #ff8200;
+        box-shadow: 0 0 60px #ff8200; } /* transform: scale( 1.1 ); */
+
+}
+
+@keyframes growNode {
+
+  from { transform: scale( 0 ) }
+  to   { transform: scale( 1 ) }
+
+}
+
+
+.app_background {
+
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 500px;
+
+}
+
+#reference {
+
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}
+
+#relative {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* --- Nodes --- */
+
+
+    .node {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        padding: 0;
+        border-radius: 50%;
+        background-color: #fdfdfd;
+        transform-origin: center center;
+        transition: all .5s ease-Out;
+
+    }
+    .node_icon {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        transform-origin: center center;
+        transition: all .5s ease-Out;
+
+    }
+    .node_name_wrap {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.5em;
+        height: .4em;
+        margin-top: -.2em;
+        margin-left: -.75em;
+
+    }
+    .node_name {
+
+        position: relative;
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+        text-align: center;
+        border: none;
+        background-color: transparent;
+        color: white;
+
+    }
+
+    #node_0 {
+
+        background-color: #FFA500;
+        -webkit-box-shadow: 0 0 15px #ff2d00;
+        -moz-box-shadow: 0 0 15px #ff2d00;
+        box-shadow: 0 0 15px #ff2d00;
+
+    }
+    #node_0:hover {
+
+        animation: jumpTo-pulse infinite 1s linear;
+        -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+        animation-direction: alternate;
+
+    }
+
+    .node.parent {
+
+        opacity: 0.5;
+
+    }
+
+
+/* ------------- */
+
+
+/* --- Details --- */
+
+
+    .details_widget_back {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        border-radius: 0;
+        background-color: rgb(214, 214, 214);
+        transform-origin: center center;
+        transition: all .5s ease-Out;
+
+    }
+
+    .edit_toggle {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+        background-color: #fdfdfd;
+        transform-origin: center center;
+        transition: all .5s ease-Out;
+
+        box-shadow: 0 0 40px #18c0ff;
+
+    }
+    .edit_toggle.close {
+
+        box-shadow: 0 0 40px #5bff32;
+
+    }
+    .edit_icon {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        transform-origin: center center;
+
+    }
+
+    .delete_button {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        padding: 0;
+        border-radius: 50%;
+        border: none;
+        background-color: #fdfdfd;
+        transform-origin: center center;
+        transition: all .5s ease-Out;
+
+        box-shadow: 0 0 30px #ff2d00;
+
+    }
+    .delete_button:hover {
+
+        box-shadow: 0 0 60px #ff2d00;
+
+    }
+    .delete_icon {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        transform-origin: center center;
+
+    }
+
+    .details_text_area_wrap {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.5em;
+        height: .5em;
+        margin-top: -.2em;
+        margin-left: -.75em;
+        transform-origin: center center;
+        transition: all .5s ease-Out;
+
+    }
+    .details_text_area {
+
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 14px;
+        outline: none;
+        resize: none;
+
+    }
+
+
+/* --------------- */
+
+
+/* --- New --- */
+
+
+    .new_widget_circle {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        border-radius: 50%;
+        transform-origin: center center;
+        transition: all .5s ease-In;
+
+        background: radial-gradient( #ffa500 40%, #000000 84% );
+
+        animation: newWidget-pulse infinite 4s linear;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+
+    }
+
+    .text_button, .new_icon_button, .confirm_button, .cancel_button {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background-color: #e8e8e8;
+        transform-origin: center center;
+        transition: all .5s ease-Out;
+
+    }
+    .text_button_icon, .new_icon_button_icon, .confirm_button_icon, .cancel_button_icon {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        transform-origin: center center;
+        /*transition: all .5s ease-Out;*/
+
+    }
+
+    .text_button {
+
+        box-shadow: 0 -2px 10px black;
+
+    }
+    .new_icon_button {
+
+        box-shadow: 0 2px 10px black;
+
+    }
+
+    .confirm_button {
+
+        box-shadow: 0 0 10px #5bff32;
+
+    }
+    .cancel_button {
+
+        box-shadow: 0 0 10px #ff2d00;
+
+    }
+    .confirm_button:hover {
+
+        box-shadow: 0 0 20px #5bff32;
+
+    }
+    .cancel_button:hover {
+
+        box-shadow: 0 0 20px #ff2d00;
+
+    }
+
+    .new_name_wrap {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 2em;
+        height: .4em;
+        margin-top: -.2em;
+        margin-left: -1em;
+
+        box-shadow: 0 0 10px black;
+
+    }
+    .new_name_form {
+
+        height: 100%;
+
+    }
+    .new_name_input {
+
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 24px;
+        outline: none;
+        border: none;
+
+    }
+
+    .new_text_area_wrap {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.5em;
+        height: .5em;
+        margin-top: -.2em;
+        margin-left: -.75em;
+        transform-origin: center center;
+        transition: all .5s ease-Out;
+
+    }
+    .new_text_area {
+
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 14px;
+        outline: none;
+        resize: none;
+
+    }
+
+
+/* ----------- */
+
+
+/* --- Radial --- */
+
+
+    .circular-menu {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        transform-origin: center center;
+
+    }
+
+    .circle {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        opacity: 0;
+        transform-origin: center center;
+        /*transition: all 0.2s ease;*/
+        transition: all .5s ease-Out;
+        pointer-events: none;
+
+    }
+    .open.circle {
+
+        opacity: 1;
+        transform: rotate(103deg);
+        pointer-events: auto;
+
+    }
+
+    .circle button {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        padding: 0;
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-align: center;
+        background: #8ab7ff;
+        border-radius: 50%;
+        box-shadow: 0 0 5px black;
+        border: none;
+
+    }
+    .circle button:hover {
+        color: #eef;
+        transform-origin: center center;
+        /*transform: scale(1.1);*/
+    }
+
+    .radial_icon {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        margin-top: -.5em;
+        margin-left: -.5em;
+        transform-origin: center center;
+        transform: rotate(-103deg);
+        /*transition: all .5s ease-Out;*/
+
+    }
+
+
+/* -------------- */
+
+
+@media ( max-width: 599px ) {
+
+
+    /* --- Nodes --- */
+
+
+        .node {
+
+            font-size: 3em;
+
+        }
+        .node_icon {
+
+            font-size: .5em;
+
+        }
+        .node_name_wrap {
+
+            font-size: 1em;
+            margin-top: .45em;
+
+        }
+
+        .node.focus {
+
+            font-size: 5em;
+
+        }
+        .node.parent {
+
+            font-size: 2.5em;
+            top: 25%;
+            left: 75%;
+
+        }
+        .node.child {
+
+
+
+        }
+        .node.jumpTo {
+
+            top: 5%;
+            left: 10%;
+
+        }
+
+        .focus .node_name {
+
+            font-size: 18px;
+
+        }
+        .child .node_name {
+
+            font-size: 10px;
+
+        }
+
+        .jumpTo .node_name_wrap {
+
+            left: 180%;
+            top: -20%;
+
+        }
+        .jumpTo .node_name {
+
+            font-size: 14px;
+            text-align: left;
+
+        }
+
+        .node.focus.expanded {
+
+            font-size: 7em;
+            margin-top: -1.5em;
+
+        }
+        .expanded .node_name_wrap {
+
+            top: 35%;
+            width: 2.14em;
+            margin-left: -1.065em;
+
+            box-shadow: 0 0 10px black;
+
+        }
+        .expanded .node_name {
+
+            box-shadow: 0 0 10px black;
+            background-color: white;
+            color: black;
+
+        }
+
+        .editable .node_name {
+
+            box-sizing: border-box;
+            border: 2px solid #18c0ff;
+
+        }
+
+
+    /* ------------- */
+
+
+    /* --- Details --- */
+
+
+        .details_widget_back {
+
+            font-size: 15em;
+            height: .5em;
+            margin-top: -.22em;
+
+        }
+
+        .edit_toggle {
+
+            font-size: .2em;
+            top: -3%;
+            left: 108%;
+
+        }
+        .edit_icon {
+
+            font-size: .5em;
+
+        }
+
+        .delete_button {
+
+            font-size: .22em;
+            margin-top: -2.5em;
+            margin-left: -2.4em;
+
+        }
+        .delete_icon {
+
+            font-size: .6em;
+
+        }
+
+        .details_text_area_wrap {
+
+            font-size: .6em;
+            top: 55%;
+
+        }
+        .details_text_area.editable {
+
+            box-sizing: border-box;
+            border: 2px solid #18c0ff;
+
+        }
+
+
+    /* --------------- */
+
+
+    /* --- New --- */
+
+
+        .new_widget_circle {
+
+            font-size: 0;
+
+        }
+        .new_widget_circle.open {
+
+            font-size: 15em;
+
+        }
+
+        .slide {
+
+            position: relative;
+            width: 100%;
+            height: 100%;
+            /*opacity: 0;*/
+            right: -130%;
+            transition: right 1.5s ease-In-Out;
+
+        }
+        .slide.go {
+
+            right: 0;
+            /*opacity: 1;*/
+
+        }
+
+        .text_button {
+
+            font-size: .3em;
+            top: 30%
+
+        }
+        .new_icon_button {
+
+            font-size: .3em;
+            top: 70%
+
+        }
+        .confirm_button {
+
+            font-size: .22em;
+            top: 60%;
+            left: 100%;
+
+        }
+        .cancel_button {
+
+            font-size: .2em;
+            top: 45%;
+            left: 105%;
+
+        }
+
+        .text_button_icon.sliding {
+
+            transition-delay: -.5s;
+
+        }
+        .text_button_icon {
+
+            font-size: .25em;
+            transition: all .5s ease-Out;
+
+        }
+        .new_icon_button_icon {
+
+            font-size: .5em;
+
+        }
+        .confirm_button_icon {
+
+            font-size: .4em;
+
+        }
+        .cancel_button_icon {
+
+            font-size: .4em;
+
+        }
+
+        .text_button.open {
+
+            width: 2em;
+            margin-left: -1em;
+            font-size: .5em;
+            top: 15%;
+            border-radius: 0;
+            box-shadow: none;
+            border: 1px solid white;
+
+        }
+        .text_button.open .text_button_icon {
+
+            font-size: .15em;
+            top: 15%;
+            left: 7%;
+            /*transition: all .5s ease-Out;*/
+
+        }
+        .new_icon_button.open {
+
+            font-size: .5em;
+            top: 80%;
+            box-shadow: 0 2px 80px black;
+
+        }
+
+        .new_name_wrap {
+
+            font-size: .5em;
+
+        }
+
+        .new_text_area_wrap {
+
+            font-size: .6em;
+            top: 17%;
+            height: 0;
+            opacity: 0;
+            transition-delay: -.5s;
+
+        }
+        .new_text_area_wrap.open {
+
+            transition-delay: .5s;
+            height: .5em;
+            opacity: 1;
+
+        }
+
+
+    /* ----------- */
+
+
+    /* --- Radial --- */
+
+        .circular-menu {
+
+            /*font-size: 2em;*/
+
+        }
+
+        .radial_link {
+
+            font-size: .4em;
+
+        }
+        .radial_icon {
+
+            font-size: .5em;
+
+        }
+
+        #details_radial {
+
+            font-size: .6em;
+            top: -50%;
+
+        }
+        #details_radial .open.circle {
+
+            transform: rotate( -65deg );
+
+        }
+        #details_radial .radial_icon {
+
+            transform: rotate( 65deg );
+
+        }
+
+
+    /* -------------- */
+
+
+}
+
+
+
+@media ( min-width: 600px ) {
+
+
+    /* --- Nodes --- */
+
+
+        .node {
+
+            font-size: 4em;
+
+        }
+        .node_icon {
+
+            font-size: .64em;
+
+        }
+        .node_name_wrap {
+
+            font-size: 1.25em;
+            margin-top: .35em;
+
+        }
+
+        .node.focus {
+
+            font-size: 7em;
+
+        }
+        .node.parent {
+
+            font-size: 4em;
+            top: 25%;
+            left: 35%;
+
+        }
+        .node.child {
+
+
+
+        }
+        .node.jumpTo {
+
+            top: 7%;
+            left: 6%;
+
+        }
+
+        .focus .node_name {
+
+            font-size: 24px;
+
+        }
+        .jumpTo .node_name_wrap {
+
+            left: 200%;
+            top: -20%;
+
+        }
+        .jumpTo .node_name {
+
+            font-size: 16px;
+            text-align: left;
+
+        }
+
+        .node.focus.expanded {
+
+            font-size: 7em;
+            margin-top: -1.5em;
+
+        }
+        .expanded .node_name_wrap {
+
+            top: 35%;
+            width: 2.055em;
+            margin-left: -1.03em;
+
+            box-shadow: 0 0 10px black;
+
+        }
+        .expanded .node_name {
+
+            box-shadow: 0 0 10px black;
+            background-color: white;
+            color: black;
+
+        }
+        .editable .node_name {
+
+            box-sizing: border-box;
+            border: 2px solid #18c0ff;
+
+        }
+
+
+    /* ------------- */
+
+
+    /* --- Details --- */
+
+
+        .details_widget_back {
+
+            font-size: 18em;
+            height: .5em;
+            margin-top: -.16em;
+
+        }
+
+        .edit_toggle {
+
+            font-size: .2em;
+            top: -3%;
+            left: 108%;
+
+        }
+        .edit_icon {
+
+            font-size: .5em;
+
+        }
+
+        .delete_button {
+
+            font-size: .2em;
+            margin-top: -2.75em;
+            margin-left: -2.4em;
+
+        }
+        .delete_icon {
+
+            font-size: .6em;
+
+        }
+
+        .details_text_area_wrap {
+
+            font-size: .6em;
+            top: 55%;
+
+        }
+        .details_text_area.editable {
+
+            box-sizing: border-box;
+            border: 2px solid #18c0ff;
+
+        }
+
+
+    /* --------------- */
+
+
+    /* --- New --- */
+
+
+        .new_widget_circle {
+
+            font-size: 0;
+
+        }
+        .new_widget_circle.open {
+
+            font-size: 20em;
+
+        }
+
+        .slide {
+
+            position: relative;
+            width: 100%;
+            height: 100%;
+            /*opacity: 0;*/
+            right: -110%;
+            transition: right 1.5s ease-In-Out;
+
+        }
+        .slide.go {
+
+            right: 0;
+            /*opacity: 1;*/
+
+        }
+
+        .text_button {
+
+            font-size: .35em;
+            top: 30%
+
+        }
+        .new_icon_button {
+
+            font-size: .35em;
+            top: 70%
+
+        }
+        .confirm_button {
+
+            font-size: .22em;
+            top: 60%;
+            left: 100%;
+
+        }
+        .cancel_button {
+
+            font-size: .2em;
+            top: 45%;
+            left: 105%;
+
+        }
+
+        .text_button_icon.sliding {
+
+            transition-delay: -.5s;
+
+        }
+        .text_button_icon {
+
+            font-size: .25em;
+
+        }
+        .new_icon_button_icon {
+
+            font-size: .5em
+
+        }
+        .confirm_button_icon {
+
+            font-size: .5em;
+
+        }
+        .cancel_button_icon {
+
+            font-size: .5em;
+
+        }
+
+        .text_button.open {
+
+            width: 2em;
+            margin-left: -1em;
+            font-size: .5em;
+            top: 15%;
+            border-radius: 0;
+
+        }
+        .text_button.open .text_button_icon {
+
+            font-size: .15em;
+            top: 15%;
+            left: 7%;
+
+        }
+        .new_icon_button.open {
+
+            font-size: .5em;
+            top: 80%;
+
+        }
+
+        .new_name_wrap {
+
+            font-size: .5em;
+
+        }
+
+        .new_text_area_wrap {
+
+
+            font-size: .6em;
+            top: 17%;
+            height: 0;
+            opacity: 0;
+            transition-delay: -.5s;
+
+        }
+        .new_text_area_wrap.open {
+
+            transition-delay: .5s;
+            height: .5em;
+            opacity: 1;
+
+        }
+
+
+    /* ----------- */
+
+
+    /* --- Radial --- */
+
+
+        .circular-menu {
+
+            /*font-size: 1.5em;*/
+
+        }
+
+        .radial_link {
+
+            font-size: .4em;
+
+        }
+        .radial_icon {
+
+            font-size: .5em;
+
+        }
+
+        #details_radial {
+
+            font-size: .6em;
+            top: -50%;
+
+        }
+        #details_radial .open.circle {
+
+            transform: rotate( -65deg );
+
+        }
+        #details_radial .radial_icon {
+
+            transform: rotate( 65deg );
+
+        }
+
+
+    /* -------------- */
+
+
+}
+
+
+
+
+
+
+
+
